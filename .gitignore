@@ -1,0 +1,13 @@
+node_modules/
+temporary screenshots/
+.DS_Store
+*.log
+package-lock.json
+screenshot.mjs
+serve.mjs
+sections.mjs
+mobile.mjs
+fullpage.mjs
+intro_shot.mjs
+hero_check.mjs
+package.json
