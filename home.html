@@ -137,10 +137,7 @@ body{
   object-position:center;
   z-index:1;
 }
-/* Don't serve huge video on tiny screens — fallback to image */
-@media (max-width: 640px){
-  .hero-video{ display:none; }
-}
+/* Video now lightweight (~2MB) — play on mobile too */
 .hero-veil{
   position:absolute; inset:0;
   background:
@@ -516,7 +513,7 @@ body{
 <!-- ======= HERO ======= -->
 <section id="top" class="relative min-h-[100svh] overflow-hidden noise">
   <div class="hero-media" data-parallax="-80">
-    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="video/hero-poster.jpg">
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="video/hero-poster.jpg" webkit-playsinline>
       <source src="video/hero.mp4" type="video/mp4">
     </video>
   </div>
